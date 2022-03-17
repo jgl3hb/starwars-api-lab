@@ -1,3 +1,7 @@
+body {
+  text-align: center;
+}
+
 .App {
   text-align: center;
 }
@@ -12,6 +16,9 @@ nav {
   background-color: black;
   text-align: center;
   min-height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -24,6 +31,11 @@ nav {
   text-decoration: none;
   color: white;
 }
+
+.link1 {
+  color: white;
+}
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -59,7 +71,6 @@ nav {
 
 #classDiv {
   border: 1px solid black;
-  width: 125px;
   display: grid;
   justify-items: center;
   padding: 15px;
@@ -72,19 +83,19 @@ nav {
 
 .ship-container {
   display: flex;
-  justify-items: center;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .ship-details {
   border: 1px solid black;
-  width: 125px;
   display: grid;
   justify-items: center;
   padding: 15px;
   margin: 1rem;
   background-color: darkslategray;
   color: white;
-  text-decoration: none;
   text-align: center;
   align-items: center;
   grid-template-rows: center;

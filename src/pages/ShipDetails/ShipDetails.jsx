@@ -14,18 +14,19 @@ const ShipDetails = () => {
 
   return ( 
     <>
-    <div className= 'ship-container'></div>
+    <div className= 'ship-container'>
       {shipDetails.name ?
     <div className='ship-details'>
       <p>Name: {shipDetails.name}</p>
       <p>Model: {shipDetails.model}</p>
-      <Link className='link' to='/'>Return</Link>
+      <Link className='link1' to='/'>Return</Link>
     </div>  
     :
     <h2>
       Loading Ship Details...
     </h2>
-}
+      }
+      </div>
     </>
   );
 }
